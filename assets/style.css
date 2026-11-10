@@ -1,0 +1,294 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8e1e7;
+    color: #4a2832;
+    margin: 0;
+    padding: 30px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(128, 0, 32, 0.08);
+    border: 1px solid #f2d6dc;
+}
+
+.page-header {
+    background: linear-gradient(135deg, #fdf2f4, #f8bbd0);
+    padding: 25px 30px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    border: 1px solid #f2d6dc;
+    border-left: 8px solid #800020;
+    box-shadow: 0 4px 15px rgba(128, 0, 32, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-logo {
+    height: 110px;
+    width: auto;
+    object-fit: contain;
+}
+
+.header-badge {
+    display: inline-block;
+    background: #800020;
+    color: #ffffff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.page-header h1 {
+    margin: 0 0 5px 0;
+    color: #800020;
+    font-size: 26px;
+    letter-spacing: -0.5px;
+    font-weight: 800;
+}
+
+.page-header p {
+    margin: 0;
+    color: #885563;
+    font-size: 14px;
+}
+
+.nav-bar {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #ffffff;
+    color: #800020;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 2px solid #f48fb1;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(128, 0, 32, 0.05);
+}
+
+.btn:hover {
+    background: #fdf2f4;
+    border-color: #800020;
+    transform: translateY(-3px);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #800020, #ad1457);
+    color: #fff;
+    border: none;
+    box-shadow: 0 6px 15px rgba(128, 0, 32, 0.2);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #5c0017, #800020);
+}
+
+.btn-secondary {
+    background: #c2185b;
+    color: #fff;
+    border: none;
+}
+
+.main-layout {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+/* --- SOL TARAF: GERÇEK KİTAP CİLT ŞEKLİNDEKİ İSTATİSTİKLER --- */
+.stats-container {
+    width: 250px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    background: linear-gradient(180deg, #fdf2f4 0%, #f8e1e7 100%);
+    padding: 18px;
+    border-radius: 16px;
+    border: 1px solid #f48fb1;
+    box-shadow: inset 0 2px 8px rgba(128, 0, 32, 0.04);
+}
+
+.stat-box {
+    background: #ffffff;
+    padding: 16px 18px;
+    text-align: left; /* Sola yaslı modern kitap kapağı tarzı yazı */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(128, 0, 32, 0.06);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* İŞTE KİTAP CİLDİ (KAPAK) GEOMETRİSİ */
+    border-radius: 6px 18px 18px 6px; 
+    border-left: 10px solid #800020; /* Kalın ve gösterişli kitap sırtı */
+    border-top: 1px solid #f2d6dc;
+    border-right: 1px solid #f2d6dc;
+    border-bottom: 1px solid #f2d6dc;
+}
+
+/* Üzerine gelince sağa doğru  ışıma efekti */
+.stat-box:hover {
+    transform: translateX(6px) scale(1.02);
+    background: #fff8fa;
+    box-shadow: 0 8px 22px rgba(128, 0, 32, 0.15);
+    border-left-color: #c2185b;
+}
+
+.stat-box h3 {
+    margin: 0 0 4px 0;
+    font-size: 11px;
+    color: #885563;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-weight: 700;
+}
+
+.stat-box p {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 800;
+    color: #800020;
+}
+/* ------------------------------------------------------------- */
+
+.content-area {
+    flex: 1;
+    min-width: 0;
+}
+
+/* FİLTRE VE ARAMA */
+.filter-box {
+    background: #fdf2f4;
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #f8bbd0;
+}
+
+.filter-box form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-group input {
+    padding: 9px 12px;
+    border-radius: 8px;
+    border: 1px solid #f48fb1;
+    background: #fff;
+    color: #4a2832;
+    outline: none;
+    width: 180px;
+}
+
+.filter-box select {
+    padding: 9px 12px;
+    border-radius: 8px;
+    border: 1px solid #f48fb1;
+    background: #fff;
+    color: #4a2832;
+    outline: none;
+}
+
+/* KİTAP KARTLARI */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+.book-card {
+    background: #ffffff;
+    border-radius: 8px 14px 14px 8px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(128, 0, 32, 0.08);
+    border: 1px solid #f2d6dc;
+    border-left: 6px solid #800020;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.book-card:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 12px 30px rgba(128, 0, 32, 0.16);
+    border-left-color: #c2185b;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.book-card h3 {
+    margin: 0 0 10px 0;
+    color: #800020;
+    font-size: 17px;
+}
+
+.book-card p {
+    margin: 0 0 15px 0;
+    color: #664450;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #fce4ec;
+    padding-top: 10px;
+}
+
+.stars {
+    color: #e91e63;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.badge {
+    background: #f8bbd0;
+    color: #800020;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.status-okundu { color: #2e7d32; font-weight: bold; font-size: 12px; }
+.status-okunuyor { color: #c2185b; font-weight: bold; font-size: 12px; }
+.status-okunacak { color: #800020; font-weight: bold; font-size: 12px; }
+
+.no-result {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 30px;
+    color: #885563;
+    background: #fdf2f4;
+    border-radius: 10px;
+}

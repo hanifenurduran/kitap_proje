@@ -1,0 +1,46 @@
+[
+    {
+        "id": 7,
+        "baslik": "Hayvan Çiftliği",
+        "yazar": "George Orwell",
+        "kategori": "Roman",
+        "aciklama": "hayvan çiftliği",
+        "durum": "Okunacak",
+        "puan": 5,
+        "kapak": "https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcTiMaviOeAvk7XBfJdHUREi3dHVs_vAW3FJ2XWcvta2bPsznfWRmm24CCG9GU7VctzdZNcNzski4mSvcqXZTLhRlcJcrTR5wIRJ6POd6u7E&amp;s=10",
+        "yorumlar": []
+    },
+    {
+        "id": 8,
+        "baslik": " Dokuzuncu Hariciye Koğuşu (Psikolojik \/ Roman)",
+        "yazar": "Peyami Safa –",
+        "kategori": "Roman",
+        "aciklama": "harıka bır kıtap",
+        "durum": "Okunacak",
+        "puan": 5,
+        "kapak": "https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcSifAyWEEhJFiMax-kruZkeXSnACtt9xT7nIagxquEfmIb3TRkI3oRmOtc&amp;s=10",
+        "yorumlar": []
+    },
+    {
+        "id": 9,
+        "baslik": "ruh adam",
+        "yazar": "huseyın nıhal atsız",
+        "kategori": "Roman",
+        "aciklama": "cok guzel",
+        "durum": "Okundu",
+        "puan": 5,
+        "kapak": "https:\/\/img.kitapyurdu.com\/v1\/getImage\/fn:11713962\/wi:800\/wh:0d4532277",
+        "yorumlar": []
+    },
+    {
+        "id": 10,
+        "baslik": "yeraltından notlar",
+        "yazar": "dostayevski",
+        "kategori": "Roman",
+        "aciklama": "yeraltından notlar",
+        "durum": "Okundu",
+        "puan": 2,
+        "kapak": "https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcQxM161FDAXA0k5Jx3gbObrY6nKSqHQSMBp3M7nYFUa3CB163cbJyCMblAAJ71rNBAFWmc735OSpUFqJ_rdjRqxm2-yKCsFp1Oho24CvNA&amp;s=10",
+        "yorumlar": []
+    }
+]
